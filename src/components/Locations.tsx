@@ -4,7 +4,7 @@ import { ArrowUpRight, PinIcon, SectionLabel } from "./ui";
 
 export default function Locations() {
   return (
-    <section id="lokacije" className="px-5 pt-20 pb-20 sm:px-8 lg:px-14 lg:pt-28 lg:pb-28">
+    <section id="lokacije" className="mx-auto w-full max-w-[1600px] px-5 pt-20 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pt-28 lg:pb-28">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between" data-reveal>
         <div>
           <SectionLabel>Lokacije</SectionLabel>

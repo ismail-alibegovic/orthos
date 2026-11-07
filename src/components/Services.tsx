@@ -12,7 +12,7 @@ export default function Services() {
   const current = services[active];
 
   return (
-    <section id="usluge" className="px-5 pb-20 sm:px-8 lg:px-14 lg:pb-28">
+    <section id="usluge" className="mx-auto w-full max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pb-28">
       <div className="mx-auto max-w-[620px] text-center" data-reveal>
         <SectionLabel>Usluge</SectionLabel>
         <h2 className="mt-4 text-[34px] leading-[1.08] font-medium tracking-[-0.035em] text-ink sm:text-[46px] lg:text-[52px]">

@@ -14,20 +14,16 @@ export default function Home() {
     <>
       <FloatingNav />
 
-      <div className="p-2 sm:p-4 lg:p-8">
-        <div className="mx-auto max-w-[1376px] rounded-[24px] bg-white p-2 sm:rounded-[30px] sm:p-3 lg:p-4">
-          <Hero />
-          <main>
-            <About />
-            <Services />
-            <Doctors />
-            <DayHospital />
-            <Locations />
-            <Contact />
-          </main>
-          <Footer />
-        </div>
-      </div>
+      <Hero />
+      <main>
+        <About />
+        <Services />
+        <Doctors />
+        <DayHospital />
+        <Locations />
+        <Contact />
+      </main>
+      <Footer />
 
       <RevealObserver />
     </>

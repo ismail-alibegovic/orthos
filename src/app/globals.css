@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  background: var(--color-frame);
+  background: #fff;
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

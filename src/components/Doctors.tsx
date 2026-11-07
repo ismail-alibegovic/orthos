@@ -6,7 +6,7 @@ export default function Doctors() {
   const [lead, ...rest] = doctors;
 
   return (
-    <section id="doktori" className="px-5 pb-20 sm:px-8 lg:px-14 lg:pb-28">
+    <section id="doktori" className="mx-auto w-full max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pb-28">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between" data-reveal>
         <div>
           <SectionLabel>Naši doktori</SectionLabel>

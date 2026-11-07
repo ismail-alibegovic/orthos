@@ -30,7 +30,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="kontakt" className="px-5 pt-4 pb-20 sm:px-8 lg:px-14 lg:pt-6 lg:pb-28">
+    <section id="kontakt" className="mx-auto w-full max-w-[1600px] px-5 pt-4 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pt-6 lg:pb-28">
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-16">
         <div data-reveal>
           <SectionLabel>Kontakt</SectionLabel>
