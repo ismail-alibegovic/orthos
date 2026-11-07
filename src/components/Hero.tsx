@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="pocetna"
-      className="relative isolate flex min-h-[640px] flex-col overflow-hidden px-5 sm:px-8 lg:px-14 xl:px-20 pt-5 pb-8 sm:min-h-[720px] sm:pt-7 lg:h-[100svh] lg:max-h-[1080px] lg:min-h-[720px] lg:pt-8 lg:pb-14"
+      className="relative isolate mt-2 flex min-h-[640px] flex-col overflow-hidden mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 pt-5 pb-8 sm:mt-3 sm:min-h-[720px] sm:pt-7 lg:mt-4 lg:h-[calc(100svh-32px)] lg:max-h-[1080px] lg:min-h-[700px] lg:pt-8 lg:pb-14"
     >
       <Image
         src="/images/hero-operaciona-sala.jpg"

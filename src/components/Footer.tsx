@@ -11,7 +11,7 @@ import { PhoneIcon, PillButton } from "./ui";
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative overflow-hidden bg-night px-5 sm:px-8 lg:px-14 xl:px-20 pt-14 text-white lg:pt-20">
+    <footer className="relative mb-2 overflow-hidden bg-night mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 pt-14 text-white sm:mb-3 lg:mb-4 lg:pt-20">
       <div className="mx-auto w-full max-w-[1440px]">
         <div
           className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between"

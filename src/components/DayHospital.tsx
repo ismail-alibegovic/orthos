@@ -17,7 +17,7 @@ export default function DayHospital() {
   return (
     <section
       id="dnevna-bolnica"
-      className="bg-mist/70 px-5 sm:px-8 lg:px-14 xl:px-20 py-20 lg:py-28"
+      className="bg-[#eef5fa] mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 py-20 lg:py-28"
     >
       <div className="mx-auto w-full max-w-[1440px]">
         <div className="mx-auto max-w-[680px] text-center" data-reveal>
