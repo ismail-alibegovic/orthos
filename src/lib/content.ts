@@ -134,8 +134,8 @@ export const services: Service[] = [
     text: "Hirurško liječenje povreda, prijeloma, oboljenja i tumora gornjih i donjih ekstremiteta, uz različite tehnike osteosinteze prijeloma.",
     points: ["Prijelomi", "Povrede", "Osteosinteza"],
     href: `${ORIGINAL_SITE}/9.php`,
-    image: "/images/kromolj-operaciona-sala-2.jpg",
-    imageAlt: "Operaciona sala s rendgen aparatom u Dnevnoj bolnici Kromolj",
+    image: "/images/kromolj-operaciona-sala-3.jpg",
+    imageAlt: "Operaciona sala u Dnevnoj bolnici Kromolj",
   },
 ];
 

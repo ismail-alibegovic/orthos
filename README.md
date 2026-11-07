@@ -26,9 +26,9 @@ font Inter preko `next/font`, slike preko `next/image`.
 
 ## Fotografije
 
-- **Stvarne fotografije ORTHOS-a** (sa službene stranice): portreti doktora (pozadina uklonjena),
+- **Stvarne fotografije ORTHOS-a** (sa službene stranice): hero (operaciona sala na Kromolju), portreti doktora (pozadina uklonjena),
   Dnevna bolnica Kromolj i ambulanta u Importanne Centru (blago posvijetljene).
-- **Ilustrativne fotografije (Unsplash)**: hero (pregled koljena), modeli koljena, ortoza ručnog zgloba,
+- **Ilustrativne fotografije (Unsplash)**: modeli koljena, ortoza ručnog zgloba,
   pregled pokretljivosti ruke. Ne prikazuju osoblje niti prostorije poliklinike; preporuka je zamijeniti ih
   vlastitim fotografijama.
 

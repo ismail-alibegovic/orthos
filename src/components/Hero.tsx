@@ -9,17 +9,17 @@ export default function Hero() {
       className="relative isolate flex min-h-[640px] flex-col overflow-hidden rounded-[20px] px-5 pt-5 pb-6 sm:min-h-[700px] sm:rounded-[24px] sm:px-8 sm:pt-7 lg:h-[min(800px,calc(100svh-48px))] lg:min-h-[700px] lg:px-14 lg:pt-8 lg:pb-12"
     >
       <Image
-        src="/images/hero-pregled-koljena.jpg"
-        alt="Specijalista pregleda koljeno pacijenta"
+        src="/images/hero-operaciona-sala.jpg"
+        alt="Operaciona sala Dnevne bolnice Poliklinike ORTHOS na Kromolju"
         fill
         priority
         sizes="(min-width: 1400px) 1360px, 100vw"
-        className="-z-20 scale-[1.02] object-cover object-[72%_8%] animate-[fade-up_1.4s_ease-out_both]"
+        className="-z-20 scale-[1.02] object-cover object-[62%_center] animate-[fade-up_1.4s_ease-out_both]"
       />
       {/* Tonski slojevi: zatamnjenje kao u referenci + čitljivost teksta */}
-      <div className="absolute inset-0 -z-10 bg-[#13202f]/30" aria-hidden="true" />
+      <div className="absolute inset-0 -z-10 bg-[#0b1624]/40 sm:bg-[#0b1624]/25 lg:bg-[#0b1624]/15" aria-hidden="true" />
       <div
-        className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(11,22,36,0.62)_0%,rgba(11,22,36,0.25)_45%,rgba(11,22,36,0)_75%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(9,18,30,0.55)_0%,rgba(9,18,30,0.2)_45%,rgba(9,18,30,0)_70%)]"
         aria-hidden="true"
       />
       <div
@@ -41,20 +41,20 @@ export default function Hero() {
       <div className="mt-10 flex flex-col gap-8 lg:mt-auto lg:flex-row lg:items-end lg:justify-between">
         {/* Staklena kartica dolje lijevo */}
         <a
-          href="#dnevna-bolnica"
+          href="#lokacije"
           className="group hidden w-[244px] animate-fade-up rounded-[18px] bg-white/12 p-2.5 ring-1 ring-white/25 backdrop-blur-xl transition-colors [animation-delay:450ms] hover:bg-white/20 sm:block"
         >
           <div className="relative h-[124px] overflow-hidden rounded-[12px]">
             <Image
-              src="/images/kromolj-operaciona-sala.jpg"
-              alt="Operaciona sala Dnevne bolnice ORTHOS"
+              src="/images/importanne-recepcija-2.jpg"
+              alt="Recepcija ambulante ORTHOS u Importanne Centru"
               fill
               sizes="244px"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
           <p className="px-1.5 pt-3 pb-1 text-[15px] leading-snug font-medium text-white">
-            Jednodnevna artroskopska hirurgija
+            Ambulanta u Importanne Centru
           </p>
         </a>
 
