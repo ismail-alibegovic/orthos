@@ -93,8 +93,7 @@ export default function Footer() {
       </p>
 
       <div className="relative py-6 text-center text-[12px] leading-relaxed text-white/45">
-        Nezavisni demo koncept redizajna ({year}) — nije službena stranica Poliklinike ORTHOS. Fotografije
-        prostora i tima: poliklinika-orthos.ba · ilustrativne fotografije: Unsplash.
+        © {year} Poliklinika ORTHOS Sarajevo · Ilustrativne fotografije: Unsplash
       </div>
     </footer>
   );

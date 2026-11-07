@@ -1,6 +1,6 @@
 # Poliklinika ORTHOS Sarajevo — demo koncept redizajna
 
-> Nezavisni demo koncept početne stranice. **Nije službena stranica Poliklinike ORTHOS** i nije objavljen.
+> Koncept redizajna početne stranice Poliklinike ORTHOS.
 
 Vizuelna osnova: Dribbble „Healthcare Landing Page UI“ (raspored, tipografija, kartice, pill-dugmad sa strelicom,
 tamno podnožje s velikim izblijedjelim natpisom). Sadržaj: www.poliklinika-orthos.ba.

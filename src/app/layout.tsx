@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Poliklinika ORTHOS Sarajevo — demo koncept redizajna",
+  title: "Poliklinika ORTHOS Sarajevo — ortopedija i opšta hirurgija",
   description:
-    "Nezavisni demo koncept nove web-stranice Poliklinike ORTHOS Sarajevo: ortopedija, traumatologija, opšta hirurgija i jednodnevna artroskopska hirurgija.",
+    "Poliklinika ORTHOS Sarajevo: ortopedija, traumatologija, opšta hirurgija i jednodnevna artroskopska hirurgija.",
   robots: { index: false, follow: false },
 };
 

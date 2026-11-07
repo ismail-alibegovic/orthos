@@ -38,26 +38,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="mt-10 flex flex-col gap-8 lg:mt-auto lg:flex-row lg:items-end lg:justify-between">
-        {/* Staklena kartica dolje lijevo */}
-        <a
-          href="#lokacije"
-          className="group hidden w-[244px] animate-fade-up rounded-[18px] bg-white/12 p-2.5 ring-1 ring-white/25 backdrop-blur-xl transition-colors [animation-delay:450ms] hover:bg-white/20 sm:block"
-        >
-          <div className="relative h-[124px] overflow-hidden rounded-[12px]">
-            <Image
-              src="/images/importanne-recepcija-2.jpg"
-              alt="Recepcija ambulante ORTHOS u Importanne Centru"
-              fill
-              sizes="244px"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-          </div>
-          <p className="px-1.5 pt-3 pb-1 text-[15px] leading-snug font-medium text-white">
-            Ambulanta u Importanne Centru
-          </p>
-        </a>
-
+      <div className="mt-10 flex flex-col gap-8 lg:mt-auto lg:flex-row lg:items-end lg:justify-end">
         {/* Tekst i CTA dolje desno */}
         <div className="max-w-[380px] animate-fade-up [animation-delay:550ms]">
           <p className="text-[15px] leading-relaxed text-white/85">
