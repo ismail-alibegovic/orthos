@@ -38,10 +38,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 96px;
+  scroll-padding-top: 80px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
   background: #fff;
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;

@@ -23,7 +23,7 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="o-nama" className="mx-auto w-full max-w-[1600px] px-5 pt-20 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pt-28 lg:pb-28">
+    <section id="o-nama" className="mx-auto w-full max-w-[1600px] px-5 pt-16 pb-16 sm:px-8 sm:pt-20 sm:pb-20 lg:px-14 xl:px-20 lg:pt-28 lg:pb-28">
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.15fr)] lg:gap-16">
         {/* Lijeva kolona: oznaka + ključna brojka */}
         <div className="flex flex-col justify-between gap-10" data-reveal>

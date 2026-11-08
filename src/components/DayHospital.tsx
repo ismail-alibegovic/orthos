@@ -17,7 +17,7 @@ export default function DayHospital() {
   return (
     <section
       id="dnevna-bolnica"
-      className="bg-[#eef5fa] mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 py-20 lg:py-28"
+      className="bg-[#eef5fa] mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-5 lg:px-10 xl:px-16 py-16 sm:py-20 lg:py-28"
     >
       <div className="mx-auto w-full max-w-[1440px]">
         <div className="mx-auto max-w-[680px] text-center" data-reveal>
@@ -27,7 +27,7 @@ export default function DayHospital() {
           </h2>
         </div>
 
-        <div className="mt-14 grid items-center gap-10 lg:mt-16 lg:grid-cols-[1fr_1.15fr_1fr] lg:gap-12">
+        <div className="mt-10 grid items-center gap-9 sm:mt-14 lg:mt-16 lg:grid-cols-[1fr_1.15fr_1fr] lg:gap-12">
           {/* Lijevo: trenutni prostor + kontrole */}
           <div className="order-2 lg:order-1" data-reveal>
             <p className="mb-3 text-xs font-medium text-muted">
@@ -120,8 +120,8 @@ export default function DayHospital() {
                 </div>
               </div>
 
-              <div className="absolute inset-x-0 bottom-5 flex justify-center">
-                <div className="flex items-center gap-1.5 rounded-full bg-white/20 p-1.5 ring-1 ring-white/30 backdrop-blur-xl">
+              <div className="absolute inset-x-0 bottom-4 flex justify-center">
+                <div className="flex items-center gap-0.5 rounded-full bg-white/20 px-2 py-0.5 ring-1 ring-white/30 backdrop-blur-xl">
                   {hospitalGallery.map((g, i) => (
                     <button
                       key={g.title}
@@ -129,13 +129,17 @@ export default function DayHospital() {
                       onClick={() => setIndex(i)}
                       aria-label={`Prikaži: ${g.title}`}
                       aria-current={i === index}
-                      className={cx(
-                        "h-2 rounded-full transition-all duration-300",
-                        i === index
-                          ? "w-7 bg-white"
-                          : "w-2 bg-white/50 hover:bg-white/80",
-                      )}
-                    />
+                      className="group grid h-6 place-items-center px-0.5"
+                    >
+                      <span
+                        className={cx(
+                          "block h-2 rounded-full transition-all duration-300",
+                          i === index
+                            ? "w-7 bg-white"
+                            : "w-2 bg-white/50 group-hover:bg-white/80",
+                        )}
+                      />
+                    </button>
                   ))}
                 </div>
               </div>

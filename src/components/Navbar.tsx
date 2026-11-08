@@ -68,7 +68,7 @@ function MobileMenu({ id, open, onClose }: { id: string; open: boolean; onClose:
       <nav
         aria-label="Mobilna navigacija"
         className={cx(
-          "absolute inset-x-3 top-3 rounded-[24px] bg-white p-5 shadow-2xl transition-all duration-400 ease-out",
+          "absolute inset-x-3 top-3 max-h-[calc(100svh-24px)] overflow-y-auto rounded-[24px] bg-white p-5 shadow-2xl transition-all duration-400 ease-out",
           open ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0",
         )}
       >

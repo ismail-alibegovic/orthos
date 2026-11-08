@@ -11,7 +11,7 @@ import { PhoneIcon, PillButton } from "./ui";
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative mb-2 overflow-hidden bg-night mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 pt-14 text-white sm:mb-3 lg:mb-4 lg:pt-20">
+    <footer className="relative mb-2 overflow-hidden bg-night mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-5 lg:px-10 xl:px-16 pt-12 text-white sm:mb-3 sm:pt-14 lg:mb-4 lg:pt-20">
       <div className="mx-auto w-full max-w-[1440px]">
         <div
           className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between"
@@ -42,15 +42,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-10 border-t border-white/10 pt-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-[1fr_1.2fr_1.4fr_1.4fr]">
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 border-t border-white/10 pt-10 sm:gap-10 sm:pt-12 lg:mt-16 lg:grid-cols-[1fr_1.2fr_1.4fr_1.4fr]">
           <div>
             <p className="text-sm font-medium">Poliklinika</p>
-            <ul className="mt-4 space-y-2.5 text-[13px] text-white/60">
+            <ul className="mt-4 space-y-1 text-[14px] text-white/60 sm:text-[13px]">
               {navLinks.map((l) => (
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    className="transition-colors hover:text-white"
+                    className="inline-block py-1.5 transition-colors hover:text-white"
                   >
                     {l.label}
                   </a>
@@ -60,14 +60,14 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-sm font-medium">Usluge</p>
-            <ul className="mt-4 space-y-2.5 text-[13px] text-white/60">
+            <ul className="mt-4 space-y-1 text-[14px] text-white/60 sm:text-[13px]">
               {services.slice(0, 6).map((s) => (
                 <li key={s.title}>
                   <a
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-colors hover:text-white"
+                    className="inline-block py-1.5 transition-colors hover:text-white"
                   >
                     {s.title}
                   </a>
@@ -76,16 +76,16 @@ export default function Footer() {
             </ul>
           </div>
           {locations.map((l) => (
-            <div key={l.id}>
+            <div key={l.id} className="col-span-2 sm:col-span-1">
               <p className="text-sm font-medium">{l.name}</p>
-              <ul className="mt-4 space-y-2.5 text-[13px] text-white/60">
+              <ul className="mt-4 space-y-1 text-[14px] text-white/60 sm:text-[13px]">
                 <li>{l.address}</li>
                 <li>{l.city}</li>
                 {l.phones.map((p) => (
                   <li key={p.href}>
                     <a
                       href={p.href}
-                      className="transition-colors hover:text-white"
+                      className="inline-block py-1.5 transition-colors hover:text-white"
                     >
                       {p.label}
                     </a>
@@ -96,7 +96,7 @@ export default function Footer() {
                     href={l.maps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-brand transition-colors hover:text-white"
+                    className="inline-block py-1.5 text-brand transition-colors hover:text-white"
                   >
                     Prikaži na mapi ↗
                   </a>
@@ -116,7 +116,7 @@ export default function Footer() {
               className="h-8 w-auto opacity-90"
             />
           </div>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1 [&_a]:py-1.5">
             <a href={`mailto:${contact.email}`} className="hover:text-white">
               {contact.email}
             </a>

@@ -49,7 +49,7 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="usluge"
-      className="mx-auto w-full max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pb-28"
+      className="mx-auto w-full max-w-[1600px] px-5 pb-16 sm:px-8 sm:pb-20 lg:px-14 xl:px-20 lg:pb-28"
     >
       <div className="mx-auto max-w-[620px] text-center" data-reveal>
         <SectionLabel>Usluge</SectionLabel>
@@ -62,10 +62,10 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="mt-14 grid gap-10 lg:mt-16 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-14">
+      <div className="mt-10 grid gap-8 sm:mt-14 sm:gap-10 lg:mt-16 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-14">
         {/* Fotografija s plutajućom karticom */}
         <div className="relative lg:sticky lg:top-28 lg:self-start" data-reveal>
-          <div className="relative aspect-[4/4.3] overflow-hidden rounded-[24px] bg-mist">
+          <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[4/4.3] rounded-[24px] bg-mist">
             {services.map((s, i) => (
               <Image
                 key={s.image}
@@ -85,7 +85,7 @@ export default function Services() {
           </div>
 
           <div
-            className="absolute inset-x-4 bottom-4 rounded-[18px] bg-white/95 p-4 shadow-[0_20px_50px_-20px_rgba(15,27,45,0.45)] backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5"
+            className="absolute inset-x-3 bottom-3 rounded-[18px] bg-white/95 p-4 shadow-[0_20px_50px_-20px_rgba(15,27,45,0.45)] backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
@@ -102,7 +102,7 @@ export default function Services() {
                   type="button"
                   onClick={() => select(active - 1)}
                   aria-label="Prethodna usluga"
-                  className="grid size-8 place-items-center rounded-full bg-mist text-ink transition-colors hover:bg-sky"
+                  className="grid size-10 place-items-center rounded-full bg-mist sm:size-8 text-ink transition-colors hover:bg-sky"
                 >
                   <ArrowLeft className="size-3.5" />
                 </button>
@@ -110,7 +110,7 @@ export default function Services() {
                   type="button"
                   onClick={() => select(active + 1)}
                   aria-label="Sljedeća usluga"
-                  className="grid size-8 place-items-center rounded-full bg-brand text-white transition-colors hover:bg-brand-deep"
+                  className="grid size-10 place-items-center rounded-full bg-brand sm:size-8 text-white transition-colors hover:bg-brand-deep"
                 >
                   <ArrowRight className="size-3.5" />
                 </button>
@@ -151,7 +151,7 @@ export default function Services() {
                   aria-selected={i === active}
                   aria-label={sv.title}
                   onClick={() => select(i)}
-                  className="group relative h-4 flex-1"
+                  className="group relative h-6 flex-1 sm:h-4"
                 >
                   <span className="absolute inset-x-0 top-1/2 h-1.5 -translate-y-1/2 overflow-hidden rounded-full bg-brand/15 transition-colors group-hover:bg-brand/30">
                     <span
@@ -263,7 +263,7 @@ export default function Services() {
                         target="_blank"
                         rel="noopener noreferrer"
                         tabIndex={isOpen ? 0 : -1}
-                        className="mt-4 inline-flex items-center gap-1 text-[13px] font-medium text-brand hover:text-brand-deep"
+                        className="mt-4 inline-flex items-center gap-1 py-1.5 text-[13px] font-medium text-brand hover:text-brand-deep"
                       >
                         Opširnije o usluzi <ArrowUpRight className="size-3.5" />
                       </a>

@@ -5,7 +5,7 @@ import { contact, doctors, locations } from "@/lib/content";
 import { ArrowUpRight, MailIcon, PhoneIcon, SectionLabel } from "./ui";
 
 const fieldCls =
-  "h-12 w-full rounded-[12px] bg-white px-4 text-sm text-ink ring-1 ring-transparent transition placeholder:text-muted/70 focus:ring-brand/50 focus:outline-none";
+  "h-12 w-full rounded-[12px] bg-white px-4 text-base text-ink sm:text-sm ring-1 ring-transparent transition placeholder:text-muted/70 focus:ring-brand/50 focus:outline-none";
 const labelCls = "mb-2 block text-[13px] font-medium text-ink";
 
 export default function Contact() {
@@ -30,7 +30,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="kontakt" className="mx-auto w-full max-w-[1600px] px-5 pt-4 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pt-6 lg:pb-28">
+    <section id="kontakt" className="mx-auto w-full max-w-[1600px] px-5 pt-0 pb-16 sm:px-8 sm:pt-4 sm:pb-20 lg:px-14 xl:px-20 lg:pt-6 lg:pb-28">
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-16">
         <div data-reveal>
           <SectionLabel>Kontakt</SectionLabel>
@@ -59,15 +59,15 @@ export default function Contact() {
               <caption className="sr-only">Radno vrijeme</caption>
               <thead className="bg-mist text-ink">
                 <tr>
-                  <th scope="col" className="px-5 py-3.5 font-medium">Dani</th>
-                  <th scope="col" className="border-l border-line px-5 py-3.5 font-medium">Radno vrijeme</th>
+                  <th scope="col" className="px-4 py-3.5 font-medium sm:px-5">Dani</th>
+                  <th scope="col" className="border-l border-line px-4 py-3.5 font-medium sm:px-5">Radno vrijeme</th>
                 </tr>
               </thead>
               <tbody className="text-muted">
                 {contact.hours.map((h) => (
                   <tr key={h.days} className="border-t border-line">
-                    <td className="px-5 py-3.5">{h.days}</td>
-                    <td className="border-l border-line px-5 py-3.5 tabular-nums">{h.time}</td>
+                    <td className="px-4 py-3.5 sm:px-5">{h.days}</td>
+                    <td className="border-l border-line px-4 py-3.5 tabular-nums sm:px-5">{h.time}</td>
                   </tr>
                 ))}
               </tbody>
@@ -97,7 +97,7 @@ export default function Contact() {
             Obrazac otvara vaš e-mail program s pripremljenom porukom za {contact.email}.
           </p>
 
-          <form onSubmit={onSubmit} className="mt-8 grid gap-5 sm:grid-cols-2">
+          <form onSubmit={onSubmit} className="mt-6 grid gap-4 sm:mt-8 sm:gap-5 sm:grid-cols-2">
             <div>
               <label htmlFor="ime" className={labelCls}>Ime i prezime</label>
               <input id="ime" name="ime" required autoComplete="name" placeholder="Vaše ime" className={fieldCls} />
@@ -137,13 +137,13 @@ export default function Contact() {
                 className={`${fieldCls} h-auto resize-none py-3`}
               />
             </div>
-            <div className="flex flex-col-reverse items-start gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-              <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-2 text-[13px] text-muted hover:text-brand">
+            <div className="flex flex-col-reverse items-stretch gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
+              <a href={`mailto:${contact.email}`} className="inline-flex items-center justify-center gap-2 py-2 text-[13px] text-muted hover:text-brand sm:justify-start sm:py-0">
                 <MailIcon className="size-4" /> {contact.email}
               </a>
               <button
                 type="submit"
-                className="group inline-flex h-12 items-center gap-4 rounded-full bg-brand pr-1.5 pl-5 text-sm font-medium text-white shadow-[0_8px_24px_-10px_rgba(22,136,201,0.8)] transition-colors hover:bg-brand-deep"
+                className="group inline-flex h-12 items-center justify-between gap-4 rounded-full bg-brand pr-1.5 pl-5 text-sm font-medium text-white shadow-[0_8px_24px_-10px_rgba(22,136,201,0.8)] transition-colors hover:bg-brand-deep"
               >
                 Pošalji upit
                 <span className="grid size-9 place-items-center rounded-full bg-white text-brand transition-transform duration-500 group-hover:rotate-45">

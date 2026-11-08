@@ -4,7 +4,7 @@ import { ArrowUpRight, PinIcon, SectionLabel } from "./ui";
 
 export default function Locations() {
   return (
-    <section id="lokacije" className="mx-auto w-full max-w-[1600px] px-5 pt-20 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pt-28 lg:pb-28">
+    <section id="lokacije" className="mx-auto w-full max-w-[1600px] px-5 pt-16 pb-16 sm:px-8 sm:pt-20 sm:pb-20 lg:px-14 xl:px-20 lg:pt-28 lg:pb-28">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between" data-reveal>
         <div>
           <SectionLabel>Lokacije</SectionLabel>
@@ -17,7 +17,7 @@ export default function Locations() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:mt-14">
+      <div className="mt-10 grid gap-8 sm:mt-12 md:grid-cols-2 md:gap-6 lg:mt-14">
         {locations.map((l, i) => (
           <article
             key={l.id}
@@ -37,7 +37,7 @@ export default function Locations() {
                 {l.tag}
               </span>
             </div>
-            <div className="mt-5 flex items-start justify-between gap-6">
+            <div className="mt-5 flex items-start justify-between gap-4 sm:gap-6">
               <div>
                 <h3 className="text-[21px] font-medium tracking-[-0.015em] text-ink">{l.name}</h3>
                 <p className="mt-1 text-sm text-muted">{l.subtitle}</p>
@@ -51,11 +51,11 @@ export default function Locations() {
                   {l.phones.map((p, j) => (
                     <span key={p.href}>
                       {j > 0 && <span className="text-muted"> · </span>}
-                      <a href={p.href} className="hover:text-brand">{p.label}</a>
+                      <a href={p.href} className="inline-block py-1 hover:text-brand">{p.label}</a>
                     </span>
                   ))}
                   <span className="text-muted"> · </span>
-                  <a href={`mailto:${contact.email}`} className="hover:text-brand">{contact.email}</a>
+                  <a href={`mailto:${contact.email}`} className="inline-block py-1 break-all hover:text-brand">{contact.email}</a>
                 </p>
               </div>
               <a

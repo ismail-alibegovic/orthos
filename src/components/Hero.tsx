@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="pocetna"
-      className="relative isolate mt-2 flex min-h-[640px] flex-col overflow-hidden mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-3 sm:px-5 lg:px-10 xl:px-16 pt-5 pb-8 sm:mt-3 sm:min-h-[720px] sm:pt-7 lg:mt-4 lg:h-[calc(100svh-32px)] lg:max-h-[1080px] lg:min-h-[700px] lg:pt-8 lg:pb-14"
+      className="relative isolate mt-2 flex min-h-[max(600px,calc(100svh-24px))] flex-col overflow-hidden mx-2 sm:mx-3 lg:mx-4 rounded-[20px] sm:rounded-[24px] lg:rounded-[28px] px-5 lg:px-10 xl:px-16 pt-5 pb-6 sm:mt-3 sm:min-h-[720px] sm:pt-7 lg:mt-4 lg:h-[calc(100svh-32px)] lg:max-h-[1080px] lg:min-h-[700px] lg:pt-8 lg:pb-14"
     >
       <Image
         src="/images/hero-operaciona-sala.jpg"
@@ -33,16 +33,16 @@ export default function Hero() {
       <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 flex-col">
         <HeroNav />
 
-        <div className="mt-auto pt-24 lg:mt-[clamp(72px,11vh,140px)] lg:pt-0">
+        <div className="mt-auto pt-20 lg:mt-[clamp(72px,11vh,140px)] lg:pt-0">
           <p className="animate-fade-up text-[13px] font-medium text-white/80 [animation-delay:150ms]">
             Ortopedija · Traumatologija · Opšta hirurgija
           </p>
-          <h1 className="mt-4 max-w-[12ch] animate-fade-up text-[44px] leading-[1.02] font-medium tracking-[-0.035em] text-white [animation-delay:250ms] sm:text-[60px] lg:text-[76px]">
+          <h1 className="mt-4 max-w-[12ch] animate-fade-up text-[40px] leading-[1.04] min-[380px]:text-[44px] font-medium tracking-[-0.035em] text-white [animation-delay:250ms] sm:text-[60px] lg:text-[76px]">
             Za sve što vas pokreće
           </h1>
         </div>
 
-        <div className="mt-10 flex flex-col gap-8 lg:mt-auto lg:flex-row lg:items-end lg:justify-end">
+        <div className="mt-8 flex flex-col gap-8 lg:mt-auto lg:flex-row lg:items-end lg:justify-end">
           {/* Tekst i CTA dolje desno */}
           <div className="max-w-[380px] animate-fade-up [animation-delay:550ms]">
             <p className="text-[15px] leading-relaxed text-white/85">
@@ -50,7 +50,7 @@ export default function Hero() {
               artroskopska hirurgija — u ambulanti u Importanne Centru i dnevnoj
               bolnici na Kromolju.
             </p>
-            <div className="mt-6 flex flex-wrap items-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:gap-3">
               <PillButton href="#kontakt">Zakažite pregled</PillButton>
               <a
                 href="#usluge"

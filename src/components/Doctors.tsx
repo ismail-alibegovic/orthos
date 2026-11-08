@@ -6,7 +6,7 @@ export default function Doctors() {
   const [lead, ...rest] = doctors;
 
   return (
-    <section id="doktori" className="mx-auto w-full max-w-[1600px] px-5 pb-20 sm:px-8 lg:px-14 xl:px-20 lg:pb-28">
+    <section id="doktori" className="mx-auto w-full max-w-[1600px] px-5 pb-16 sm:px-8 sm:pb-20 lg:px-14 xl:px-20 lg:pb-28">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between" data-reveal>
         <div>
           <SectionLabel>Naši doktori</SectionLabel>
@@ -19,10 +19,10 @@ export default function Doctors() {
         </PillButton>
       </div>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-14 lg:grid-cols-[1.45fr_1fr_1fr] lg:gap-6">
+      <div className="mt-10 grid gap-5 sm:mt-12 sm:grid-cols-2 lg:mt-14 lg:grid-cols-[1.45fr_1fr_1fr] lg:gap-6">
         {/* Istaknuti doktor */}
         <article className="group sm:col-span-2 lg:col-span-1" data-reveal>
-          <div className="portrait-bg-strong relative aspect-[4/3.6] overflow-hidden rounded-[20px] sm:aspect-[16/10] lg:aspect-[4/4.4]">
+          <div className="portrait-bg-strong relative aspect-[4/3.4] overflow-hidden rounded-[20px] sm:aspect-[16/10] lg:aspect-[4/4.4]">
             <Image
               src={lead.image}
               alt={lead.name}
@@ -45,7 +45,7 @@ export default function Doctors() {
             data-reveal
             style={{ ["--reveal-delay" as string]: `${(i + 1) * 100}ms` }}
           >
-            <div className={cx("portrait-bg relative aspect-[4/4.2] overflow-hidden rounded-[20px]")}>
+            <div className={cx("portrait-bg relative aspect-[4/3.4] overflow-hidden sm:aspect-[4/4.2] rounded-[20px]")}>
               <Image
                 src={d.image}
                 alt={d.name}
